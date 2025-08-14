@@ -37,6 +37,7 @@ header {
     justify-content: space-around;
     color: white;
     font-size: 4rem;
+    align-items: center;
     left: 20rem;
     z-index: 100;
     padding: 4rem;
@@ -95,4 +96,39 @@ h2{
 .info img {
     border-radius: 50%;
     width: 30rem;
+
 }
+
+
+@media (max-width: 767px) {
+    #background-video{
+        object-fit: cover;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .info{
+        flex-direction: column;
+        width: 100vw;
+        top: 0;
+        padding: 3rem;
+        left: 0;
+        margin: 10rem 3rem 0 0rem;
+    }
+    
+    .text{
+        margin: 0 3rem;
+    }
+    .text p{
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    img {
+        width: 4rem;
+        margin-bottom: 5rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+  }
